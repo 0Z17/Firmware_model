@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<sdf version='1.7'>
+  <model name='WindTURBINE'>
+    <pose>10 10 0 0 0 0</pose>
+    <link name='base_link'>
+      <inertial>
+        <pose>0.36397 -1e-06 34.227 0 -0 0</pose>
+        <mass>5.6657e+06</mass>
+        <inertia>
+          <ixx>3.1173e+09</ixx>
+          <ixy>185.79</ixy>
+          <ixz>-7.6765e+07</ixz>
+          <iyy>3.129e+09</iyy>
+          <iyz>329.14</iyz>
+          <izz>2.0775e+07</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://WindTURBINE/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://WindTURBINE/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.1176 0.5647 1 1</ambient>
+          <diffuse>0.1176 0.5647 1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    <joint name='roter_joint' type='fixed'>
+      <pose relative_to='base_link'>-6.5731 0 71.01 -3.1375 0.37593 1.5819</pose>
+      <parent>base_link</parent>
+      <child>roter</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <effort>50000</effort>
+          <velocity>0</velocity>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='roter'>
+      <pose relative_to='roter_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.026876 2.6159 -0.000313 0 -0 0</pose>
+        <mass>19721</mass>
+        <inertia>
+          <ixx>589030</ixx>
+          <ixy>-5831.1</ixy>
+          <ixz>24.182</ixz>
+          <iyy>1.1522e+06</iyy>
+          <iyz>2.0269</iyz>
+          <izz>589010</izz>
+        </inertia>
+      </inertial>
+      <collision name='roter_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://WindTURBINE/meshes/roter.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='roter_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://WindTURBINE/meshes/roter.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.6784 0.8471 0.902 1</ambient>
+          <diffuse>0.6784 0.8471 0.902 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

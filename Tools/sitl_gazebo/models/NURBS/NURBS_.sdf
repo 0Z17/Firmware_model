@@ -1,0 +1,1913 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <model name="NURBS">
+    <static>true</static>
+    <link name="link">
+      <!-- <pose>2.000000 0.025000 1.375000 0.000000 1.570796 -1.570796</pose> -->
+      <!-- <pose>1.500000 0.0 0.0 0.000000 0.0 -1.570796</pose> -->
+      <pose>1.500000 0.0 0.0 0.000000 0.0 -1.570796</pose>
+      <mass>17.0</mass>
+      <collision name="collision_00">
+        <max_contacts>300</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_00.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_01">
+        <max_contacts>300</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_01.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_02">
+
+        <max_contacts>300</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_02.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_03">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_03.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_04">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_04.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_05">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_05.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_06">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_06.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_07">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_07.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_08">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_08.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_09">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_09.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_10">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_10.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_11">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_11.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_12">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_12.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_13">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_13.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_14">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_14.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_15">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_15.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_16">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_16.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_17">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_17.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_18">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_18.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_19">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_19.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_20">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_20.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_21">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_21.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_22">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_22.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_23">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_23.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_24">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_24.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_25">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_25.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_26">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_26.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_27">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_27.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_28">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_28.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_29">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_29.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_30">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_30.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_31">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_31.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_32">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_32.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_33">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_33.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_34">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_34.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_35">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_35.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_36">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_36.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_37">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_37.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_38">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_38.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_39">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_39.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_40">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_40.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_41">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_41.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_42">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_42.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_43">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_43.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_44">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_44.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_45">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_45.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_46">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_46.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_47">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_47.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_48">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_48.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_49">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_49.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_50">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_50.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_51">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_51.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_52">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_52.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_53">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_53.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_54">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_54.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_55">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_55.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_56">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_56.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_57">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_57.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_58">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_58.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_59">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_59.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_60">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_60.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_61">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_61.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_62">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_62.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_63">
+
+<max_contacts>300</max_contacts>
+<surface>
+  <contact>
+    <ode/>
+  </contact>
+  <bounce/>
+  <friction>
+    <torsional>
+      <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+      <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+      <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+      <ode>
+        <slip>0.1</slip> <!-- 滑动参数 -->
+      </ode>
+    </torsional>
+    <ode>
+      <mu>0.01</mu>
+      <mu2>0.01</mu2>
+    </ode>
+  </friction>
+</surface>
+
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_63.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://NURBS/meshes/NURBS.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

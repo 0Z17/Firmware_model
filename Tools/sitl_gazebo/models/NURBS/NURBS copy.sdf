@@ -1,0 +1,469 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <model name="NURBS">
+    <static>true</static>
+    <link name="link">
+      <!-- <pose>2.000000 0.025000 1.375000 0.000000 1.570796 -1.570796</pose> -->
+      <!-- <pose>1.500000 0.0 0.0 0.000000 0.0 -1.570796</pose> -->
+      <pose>1.700000 0.0 0.0 0.000000 0.0 -1.570796</pose>
+      <mass>17.0</mass>
+      <collision name="collision_00">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_00.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_01">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_01.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_02">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_02.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_03">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_03.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_04">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_04.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_05">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_05.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_06">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_06.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_07">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_07.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_08">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_08.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_09">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_09.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_10">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_10.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_11">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_11.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_12">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_12.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_13">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_13.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_14">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_14.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_15">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_15.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_16">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_16.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_17">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_17.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_18">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_18.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_19">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_19.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_20">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_20.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_21">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_21.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_22">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_22.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_23">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_23.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_24">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_24.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_25">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_25.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_26">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_26.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_27">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_27.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_28">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_28.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_29">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_29.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_30">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_30.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_31">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_31.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_32">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_32.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_33">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_33.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_34">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_34.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_35">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_35.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_36">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_36.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_37">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_37.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_38">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_38.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_39">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_39.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_40">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_40.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_41">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_41.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_42">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_42.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_43">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_43.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_44">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_44.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_45">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_45.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_46">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_46.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_47">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_47.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_48">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_48.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_49">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_49.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_50">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_50.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_51">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_51.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_52">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_52.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_53">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_53.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_54">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_54.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_55">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_55.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_56">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_56.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_57">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_57.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_58">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_58.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_59">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_59.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_60">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_60.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_61">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_61.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_62">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_62.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name="collision_63">
+        <geometry>
+          <mesh>
+            <uri>model://NURBS/meshes/NURBS_coll_63.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://NURBS/meshes/NURBS.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="end_effector.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-5.9501E-17 2.0192E-18 -0.093556"
+        rpy="0 0 0" />
+      <mass
+        value="0.015757" />
+      <inertia
+        ixx="7.1919E-05"
+        ixy="-9.2259E-09"
+        ixz="-4.4723E-20"
+        iyy="7.1703E-05"
+        iyz="4.8524E-23"
+        izz="3.5019E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="connect_Link">
+    <inertial>
+      <origin
+        xyz="0.0010422 -3.9817E-05 -0.16252"
+        rpy="0 0 0" />
+      <mass
+        value="0.049595" />
+      <inertia
+        ixx="0.00045029"
+        ixy="-2.6246E-08"
+        ixz="8.0124E-10"
+        iyy="0.00044967"
+        iyz="2.2274E-10"
+        izz="3.5709E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/connect_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.49804 0.49804 0.49804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/connect_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="connect_joint"
+    type="prismatic">
+    <origin
+      xyz="0 0 -0.29735"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="connect_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="move_base_Link">
+    <inertial>
+      <origin
+        xyz="8.9797E-12 -0.010652 0.021251"
+        rpy="0 0 0" />
+      <mass
+        value="0.17494" />
+      <inertia
+        ixx="0.00015577"
+        ixy="1.3338E-15"
+        ixz="-1.3294E-15"
+        iyy="0.0001038"
+        iyz="4.6398E-08"
+        izz="0.00021957" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/move_base_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/move_base_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="move_base_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 -0.4115"
+      rpy="0 0 0" />
+    <parent
+      link="connect_Link" />
+    <child
+      link="move_base_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel2_Link">
+    <inertial>
+      <origin
+        xyz="-1.484E-06 -0.002344 1.5339E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.040979" />
+      <inertia
+        ixx="2.4817E-06"
+        ixy="1.6072E-10"
+        ixz="-1.8492E-10"
+        iyy="4.0926E-06"
+        iyz="-1.5732E-10"
+        izz="2.4817E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/wheel2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/wheel2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name=" wheel2_joint"
+    type="continuous">
+    <origin
+      xyz="0.07403 -0.042741 0.0115"
+      rpy="0 0 -2.0944" />
+    <parent
+      link="move_base_Link" />
+    <child
+      link="wheel2_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel1_Link">
+    <inertial>
+      <origin
+        xyz="-1.4728E-06 -0.0024779 -4.285E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.041284" />
+      <inertia
+        ixx="2.4836E-06"
+        ixy="1.6072E-10"
+        ixz="-1.849E-10"
+        iyy="4.093E-06"
+        iyz="-1.5731E-10"
+        izz="2.4836E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/wheel1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/wheel1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel1_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.085482 0.0115"
+      rpy="0 0 0" />
+    <parent
+      link="move_base_Link" />
+    <child
+      link="wheel1_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel3_Link">
+    <inertial>
+      <origin
+        xyz="-1.4839E-06 -0.002344 1.5339E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.040979" />
+      <inertia
+        ixx="2.4817E-06"
+        ixy="1.6071E-10"
+        ixz="-1.8491E-10"
+        iyy="4.0926E-06"
+        iyz="-1.5732E-10"
+        izz="2.4817E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/wheel3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://end_effector.SLDASM/meshes/wheel3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel3_joint"
+    type="continuous">
+    <origin
+      xyz="-0.07403 -0.042741 0.0115"
+      rpy="0 0 2.0944" />
+    <parent
+      link="move_base_Link" />
+    <child
+      link="wheel3_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>

@@ -1,0 +1,72 @@
+ <joint name='force_sensor_joint' type='fixed'>
+      <pose relative_to='operator_1_Link'>0.832 -0.013 0.482 0 1.05 0</pose>
+      <child>force_sensor</child>
+      <parent>operator_1_Link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <!-- <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>1000</spring_stiffness>
+        </dynamics> -->
+        <dynamics>
+          <damping>0.000000</damping>
+          <friction>0.000000</friction>
+        </dynamics>
+        <!-- <use_parent_model_frame>1</use_parent_model_frame> -->
+      </axis>
+      <sensor name="force_torque" type="force_torque">
+        <update_rate>30</update_rate>
+        <visualize>1</visualize>
+      </sensor>
+    </joint>
+
+    <link name='force_sensor'>
+      <pose relative_to='force_sensor_joint'>0 0 0.01 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>1e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='force_sensor_collision'>
+        <pose relative_to='force_sensor_joint'>0 0 0.01 0 0 0</pose>
+        <geometry>
+          <!-- <box>
+            <size>0.03 0.03 0.01</size>
+          </box> -->
+          <cylinder>
+            <radius>0.01</radius>
+            <length>0.01</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='force_sensor_visual'>
+        <pose relative_to='force_sensor_joint'>0 0 0.01 0 -0 0</pose>
+        <geometry>
+          <!-- <box>
+            <size>0.03 0.03 0.01</size>
+          </box> -->
+          <cylinder>
+            <radius>0.01</radius>
+            <length>0.01</length>
+          </cylinder>
+        </geometry>
+      </visual>
+    
+
+      <gravity>0</gravity>
+      <velocity_decay/>
+      <self_collide>0</self_collide>
+    </link>

@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="static_obstacles_v2">
+    <static>true</static>
+    
+    <!-- Box 1 -->
+    <link name="box1_link">
+      <collision name="box1_collision">
+        <geometry>
+          <!-- <box><size>0.6 0.2 0.2</size></box> -->
+          <box><size>0.45 0.1 0.1</size></box>
+        </geometry>
+      </collision>
+      <visual name="box1_visual">
+        <!-- <geometry><box><size>0.6 0.2 0.2</size></box></geometry> -->
+        <geometry><box><size>0.45 0.1 0.1</size></box></geometry>
+        <material><ambient>0.5 1 0.5 1</ambient><diffuse>0.5 1 0.5 1</diffuse></material>
+      </visual>
+      <pose>0.3 0.2 1.1 0 0 0</pose>
+    </link>
+
+    <!-- Box 2 -->
+    <link name="box2_link">
+      <collision name="box2_collision">
+        <!-- <geometry><box><size>0.2 0.2 0.8</size></box></geometry> -->
+        <geometry><box><size>0.1 0.1 0.65</size></box></geometry>
+      </collision>
+      <visual name="box2_visual">
+        <!-- <geometry><box><size>0.2 0.2 0.8</size></box></geometry> -->
+        <geometry><box><size>0.1 0.1 0.65</size></box></geometry>
+        <material><ambient>0.5 1 0.5 1</ambient><diffuse>0.5 1 0.5 1</diffuse></material>
+      </visual>
+      <pose>0.2 -1.2 2.23 0 0 0</pose>
+    </link>
+
+    <!-- Box 3 -->
+    <link name="box3_link">
+      <collision name="box3_collision">
+        <!-- <geometry><box><size>0.4 0.6 0.2</size></box></geometry> -->
+        <geometry><box><size>0.25 0.45 0.1</size></box></geometry>
+      </collision>
+      <visual name="box3_visual">
+        <!-- <geometry><box><size>0.4 0.6 0.2</size></box></geometry> -->
+        <geometry><box><size>0.25 0.45 0.1</size></box></geometry>
+        <material><ambient>0.5 1 0.5 1</ambient><diffuse>0.5 1 0.5 1</diffuse></material>
+      </visual>
+      <pose>-0.11 -0.3 1.33 0 0 0</pose>
+    </link>
+
+    <!-- Box 4 -->
+    <link name="box4_link">
+      <collision name="box4_collision">
+        <!-- <geometry><box><size>0.2 1.4 0.8</size></box></geometry> -->
+        <geometry><box><size>0.1 1.3 0.7</size></box></geometry>
+      </collision>
+      <visual name="box4_visual">
+        <!-- <geometry><box><size>0.2 1.4 0.8</size></box></geometry> -->
+        <geometry><box><size>0.1 1.3 0.7</size></box></geometry>
+        <material><ambient>0.5 1 0.5 1</ambient><diffuse>0.5 1 0.5 1</diffuse></material>
+      </visual>
+      <pose>1.6 2.5 2.33 0 0 0</pose>
+    </link>
+
+    <!-- Box 5 -->
+    <link name="box5_link">
+      <collision name="box5_collision">
+        <!-- <geometry><box><size>0.4 1.2 0.4</size></box></geometry> -->
+        <geometry><box><size>0.25 1.05 0.25</size></box></geometry>
+      </collision>
+      <visual name="box5_visual">
+        <!-- <geometry><box><size>0.4 1.2 0.4</size></box></geometry> -->
+        <geometry><box><size>0.25 1.05 0.25</size></box></geometry>
+        <material><ambient>0.5 1 0.5 1</ambient><diffuse>0.5 1 0.5 1</diffuse></material>
+      </visual>
+      <pose>0.4 1.1 3.8 0 0 0</pose>
+    </link>
+
+    <!-- 新增 Box 6 -->
+    <link name="box6_link">
+      <collision name="box6_collision">
+        <!-- <geometry><box><size>0.2 0.2 0.3</size></box></geometry> -->
+        <geometry><box><size>0.1 0.1 0.15</size></box></geometry>
+      </collision>
+      <visual name="box6_visual">
+        <!-- <geometry><box><size>0.2 0.2 0.3</size></box></geometry> -->
+        <geometry><box><size>0.1 0.1 0.15</size></box></geometry>
+        <material><ambient>0.5 1 0.5 1</ambient><diffuse>0.5 1 0.5 1</diffuse></material>
+      </visual>
+      <pose>0.3 0.45 1.8 0 0 0</pose>
+    </link>
+
+    <!-- 新增 Box 7 -->
+    <link name="box7_link">
+      <collision name="box7_collision">
+        <!-- <geometry><box><size>0.2 0.6 0.2</size></box></geometry>  -->
+        <geometry><box><size>0.1 0.45 0.6</size></box></geometry> 
+      </collision>
+      <visual name="box7_visual">
+        <!-- <geometry><box><size>0.2 0.6 0.2</size></box></geometry> -->
+        <geometry><box><size>0.1 0.45 0.6</size></box></geometry> 
+        <material><ambient>0.5 1 0.5 1</ambient><diffuse>0.5 1 0.5 1</diffuse></material>
+      </visual>
+      <pose>0.8 0.0 3.45 0 0 0</pose>
+    </link>
+
+  </model>
+</sdf>

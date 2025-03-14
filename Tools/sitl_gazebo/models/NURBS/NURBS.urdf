@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot name="NURBS">
+    <link name="robot_base">
+        <visual name="NURBS">
+            <origin xyz="2.000000 0.025000 1.375000" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="file://C:/Users/asus/Desktop/NURBS_robot_base_vis_1.dae" />
+            </geometry>
+            <material name="robot_base_material">
+                <color rgba="1.000000 1.000000 1.000000 1.0" />
+            </material>
+        </visual>
+    </link>
+</robot>

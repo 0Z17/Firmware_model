@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<sdf version='1.7'>
+  <model name='tube'>
+    <static>true</static>
+    <pose>-15 15 0 0 0 0</pose>
+    <link name='base_link'>
+      <inertial>
+        <pose>0 -0 0 0 -0 0</pose>
+        <mass>24.7</mass>
+        <inertia>
+          <ixx>0.29001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.16691</iyy>
+          <iyz>0</iyz>
+          <izz>0.32569</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tube/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://tube/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

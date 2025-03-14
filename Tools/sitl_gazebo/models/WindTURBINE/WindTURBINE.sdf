@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<sdf version='1.7'>
+  <model name='WindTURBINE'>
+    <static>true</static>
+    <pose>10 10 0 0 0 0</pose>
+    <link name='base_link'>
+      <inertial>
+        <pose>0.0 0.0 0.0 0 -0 0</pose>
+        <mass>5.6657e+06</mass>
+        <inertia>
+          <ixx>3.1173e+09</ixx>
+          <ixy>185.79</ixy>
+          <ixz>-7.6765e+07</ixz>
+          <iyy>3.129e+09</iyy>
+          <iyz>329.14</iyz>
+          <izz>2.0775e+07</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>-10 -10 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://WindTURBINE/meshes/wind_turbine_segment.stl</uri>
+          </mesh>
+        </geometry>
+        <max_contacts>300</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <coefficient>0.01</coefficient> <!-- 扭转摩擦系数 -->
+              <patch_radius>0.01</patch_radius> <!-- 接触补丁半径 -->
+              <surface_radius>0.01</surface_radius> <!-- 表面半径 -->
+              <ode>
+                <slip>0.1</slip> <!-- 滑动参数 -->
+              </ode>
+            </torsional>
+            <ode>
+              <mu>0.01</mu>
+              <mu2>0.01</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://WindTURBINE/meshes/wind_turbine.stl</uri>
+          </mesh>
+        </geometry>
+        <!-- <material>
+          <ambient>0.1176 0.5647 1 1</ambient>
+          <diffuse>0.1176 0.5647 1 1</diffuse>
+        </material> -->
+      </visual>
+
+    </link>
+  </model>
+</sdf>

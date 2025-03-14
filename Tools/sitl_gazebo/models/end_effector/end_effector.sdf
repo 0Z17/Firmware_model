@@ -1,0 +1,252 @@
+<sdf version='1.7'>
+  <model name='end_effector'>
+    <link name='base_link'>
+      <inertial>
+        <pose>-0 0 -0.093556 0 -0 0</pose>
+        <mass>0.15757</mass>
+        <inertia>
+          <ixx>7.1919e-05</ixx>
+          <ixy>-9.2259e-09</ixy>
+          <ixz>-4.4723e-20</ixz>
+          <iyy>7.1703e-05</iyy>
+          <iyz>4.8524e-23</iyz>
+          <izz>3.5019e-07</izz>
+        </inertia>
+      </inertial>
+      <!-- <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision> -->
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='connect_joint' type='prismatic'>
+      <pose relative_to='base_link'>0 0 -0.29735 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>connect_Link</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.2</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>65</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='connect_Link'>
+      <pose relative_to='connect_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.00023 -0.008308 -0.339949 0 -0 0</pose>
+        <mass>0.224535</mass>
+        <inertia>
+          <ixx>0.00261433</ixx>
+          <ixy>-4.53611e-07</ixy>
+          <ixz>-9.17011e-06</ixz>
+          <iyy>0.00255743</iyy>
+          <iyz>-9.3336e-05</iyz>
+          <izz>0.000227535</izz>
+        </inertia>
+      </inertial>
+      <!-- <collision name='connect_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/connect_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision> -->
+      <!-- <collision name='connect_Link_fixed_joint_lump__move_base_Link_collision_1'>
+        <pose>0 0 -0.4115 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/move_base_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision> -->
+      <visual name='connect_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/connect_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='connect_Link_fixed_joint_lump__move_base_Link_visual_1'>
+        <pose>0 0 -0.4115 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/move_base_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='wheel2_joint' type='revolute'>
+      <pose relative_to='connect_Link'>0.07403 -0.042741 -0.4 0 0 -2.0944</pose>
+      <parent>connect_Link</parent>
+      <child>wheel2_Link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wheel2_Link'>
+      <pose relative_to='wheel2_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-1e-06 -0.002344 2e-06 0 -0 0</pose>
+        <mass>0.040979</mass>
+        <inertia>
+          <ixx>2.4817e-06</ixx>
+          <ixy>1.6072e-10</ixy>
+          <ixz>-1.8492e-10</ixz>
+          <iyy>4.0926e-06</iyy>
+          <iyz>-1.5732e-10</iyz>
+          <izz>2.4817e-06</izz>
+        </inertia>
+      </inertial>
+      <!-- <collision name='wheel2_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/wheel2_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision> -->
+      <visual name='wheel2_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/wheel2_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='wheel1_joint' type='revolute'>
+      <pose relative_to='connect_Link'>0 0.085482 -0.4 0 -0 0</pose>
+      <parent>connect_Link</parent>
+      <child>wheel1_Link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wheel1_Link'>
+      <pose relative_to='wheel1_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-1e-06 -0.002478 -4.3e-05 0 -0 0</pose>
+        <mass>0.041284</mass>
+        <inertia>
+          <ixx>2.4836e-06</ixx>
+          <ixy>1.6072e-10</ixy>
+          <ixz>-1.849e-10</ixz>
+          <iyy>4.093e-06</iyy>
+          <iyz>-1.5731e-10</iyz>
+          <izz>2.4836e-06</izz>
+        </inertia>
+      </inertial>
+      <!-- <collision name='wheel1_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/wheel1_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision> -->
+      <visual name='wheel1_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/wheel1_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='wheel3_joint' type='revolute'>
+      <pose relative_to='connect_Link'>-0.07403 -0.042741 -0.4 0 -0 2.0944</pose>
+      <parent>connect_Link</parent>
+      <child>wheel3_Link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='wheel3_Link'>
+      <pose relative_to='wheel3_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-1e-06 -0.002344 2e-06 0 -0 0</pose>
+        <mass>0.040979</mass>
+        <inertia>
+          <ixx>2.4817e-06</ixx>
+          <ixy>1.6071e-10</ixy>
+          <ixz>-1.8491e-10</ixz>
+          <iyy>4.0926e-06</iyy>
+          <iyz>-1.5732e-10</iyz>
+          <izz>2.4817e-06</izz>
+        </inertia>
+      </inertial>
+      <!-- <collision name='wheel3_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/wheel3_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision> -->
+      <visual name='wheel3_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://end_effector/meshes/wheel3_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
